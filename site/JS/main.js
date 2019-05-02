@@ -4,4 +4,4 @@ function showMenu(event){
 
     let fadeLayer = document.querySelector(".fade-layer")
     fadeLayer.classList.toggle("visible")
-}ument.getElementById("button").href = "index.html"
+    document.getElementById("button").href = "index.html" } 
