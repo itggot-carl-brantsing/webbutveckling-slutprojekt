@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel-A Fanpage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <div class="link1 smalltransition"></div>
+        <div class="link2 smalltransition"></div>
+        <div class="link3 smalltransition"></div>
+    </div>
+
+    <div class="fade-layer" onclick="showMenu()"></div>
+
+            
+        <div class="menu-button" onclick="showMenu()">
+            <i class="material-icons">menu</i> </div>
+
+    <h1>webbutveckling-slutprojekt</h1>
+
+<h2>Kravspecifikation</h2>
+
+<ul>
+<li>Allt</li>
+<li>etc.</li>
+</ul>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
