@@ -5,9 +5,23 @@ body {
 .wrapper-index {
   min-height: 100vh;
   width: 100vw;
+  background-image: url("../../psd/index-bakgrund.jpg");
+  background-size: cover;
   display: grid;
-  grid-template-rows: 45% 55%;
+  grid-template-rows: 40% 60%;
   grid-template-areas: "main" "footer"; }
+
+.personbild {
+  background-image: url("../../psd/personbild.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: 17%;
+  left: 0; }
 
 body, ul {
   margin: 0; }
@@ -19,31 +33,30 @@ footer {
   grid-area: footer; }
 
 main.index {
-  background-color: yellow;
   height: 100vh;
   width: 100vw; }
 
 footer.index {
-  background-color: hotpink;
   height: 100%;
   width: 100vw;
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 85%;
   grid-template-areas: "footer-title" "footer-main";
   grid-template-columns: 100%; }
 
 .footer-title {
   width: 80%;
   height: 100%;
-  background-color: wheat;
-  justify-self: center; }
+  background-color: rgba(93, 93, 109, 0.7);
+  margin: auto; }
 
 .footer-main {
   width: 80%;
-  height: 100%;
+  height: 80%;
   align-self: auto;
-  background-color: orange;
-  justify-self: center; }
+  background-color: rgba(124, 123, 145, 0.5);
+  justify-self: center;
+  font-size: 1rem; }
 
 .wrapper-iron {
   min-height: 100vh;
@@ -53,6 +66,8 @@ footer.index {
   grid-template-areas: "main-iron" "footer-iron"; }
 
 main.iron {
+  background-image: url(../../psd/marveltony.jpg);
+  background-size: contain;
   width: 100%;
   height: 100%;
   background-color: blue;
@@ -71,16 +86,19 @@ footer.iron {
   width: 100vw;
   height: 100%;
   background-color: hotpink;
-  grid-area: pic; }
+  grid-area: pic;
+  background-image: url(../../psd/ironman2.jpg);
+  background-size: cover; }
 
 .footertext:hover {
+  text-align: center;
   height: 200%;
   font-size: 2rem; }
 
 .footertext {
   width: 100vw;
   height: 100%;
-  background-color: darkblue;
+  background-color: gold;
   transition: 0.4s;
   font-size: 1rem;
   grid-area: text; }
@@ -98,19 +116,21 @@ main.captain {
   height: 100%;
   display: grid;
   grid-template-rows: 20% 80%;
-  grid-area: "mainhead" "mainbody"; }
+  grid-template-areas: "mainhead" "mainbody"; }
 
 .mainhead {
+  grid-area: mainhead;
   width: 100%;
   height: 100%;
-  background-color: green;
-  grid-area: "mainhead"; }
+  background-color: black; }
 
 .mainbody {
+  background-image: url(../../psd/captainmarvel2.jpg);
+  background-size: cover;
+  grid-area: mainbody;
   width: 100%;
   height: 100%;
-  background-color: blue;
-  grid-area: "mainbody"; }
+  background-color: blue; }
 
 .middelsegment {
   width: 100%;
@@ -125,18 +145,23 @@ main.captain {
   width: 100%;
   height: 100%;
   background-color: pink;
-  grid-area: pic1; }
+  grid-area: pic1;
+  background-image: url(../../psd/captainmarvel3.jpg);
+  background-size: cover; }
 
 .cap-pic2 {
   width: 100%;
   height: 100%;
   background-color: orange;
-  grid-area: pic2; }
+  grid-area: pic2;
+  background-image: url(../../psd/captainmarvel4.jpg);
+  background-size: cover; }
 
 footer.captain {
   grid-area: footer-cap;
   padding-top: 10px;
-  background-color: grey; }
+  background-color: black;
+  color: white; }
 
 .boll {
   background-image: url("../img/captain_logo.jpg");
@@ -160,6 +185,7 @@ footer.captain {
   min-height: 100vh;
   width: 100%;
   display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: 80% 20% 5%;
   grid-template-areas: "main-spider" "footer-spider" "end-spider"; }
 
@@ -176,15 +202,29 @@ main.spider {
   height: 100%;
   width: 100%;
   grid-area: topspider;
-  background-color: yellow; }
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 2rem; }
 
 .middelspider {
+  background-image: url(../../psd/spider-man2.jpg);
+  background-size: cover;
   height: 100%;
   width: 100%;
   grid-area: middelspider;
   background-color: hotpink; }
 
+.read {
+  height: 80%;
+  width: 80%;
+  margin-top: 12.5%;
+  margin-right: 20%;
+  background-color: rgba(104, 98, 116, 0.5);
+  z-index: 10; }
+
 footer.spider {
+  display: block;
   grid-area: footer-spider;
   height: 100%;
   width: 100%;
@@ -202,13 +242,27 @@ footer.spider {
   color: black;
   margin: auto; }
 
+.infospider2 {
+  height: 100%;
+  width: 100%;
+  color: rgba(0, 0, 0, 0); }
+
+.infospider2:hover {
+  height: 90%;
+  width: 90%;
+  background-color: rgba(47, 76, 93, 0.2);
+  color: black;
+  margin: auto; }
+
 .picspider1 {
+  background-image: url(../../psd/spiderTony.jpg);
   height: 100%;
   width: 50%;
   background-color: wheat;
   margin: auto; }
 
 .picspider2 {
+  background-image: url(../../psd/spider-man3.jpg);
   height: 100%;
   width: 50%;
   background-color: orange;
@@ -218,12 +272,30 @@ footer.spider {
   grid-area: end-spider;
   height: 100%;
   width: 100%;
-  background-color: blue; }
+  background-color: red;
+  color: white;
+  text-align: center; }
+
+.spiderend h2 {
+  margin: 0; }
 
 .smalltransition {
   transition: 0.4s; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  cursor: pointer; }
+
+h1 {
+  text-align: center;
+  color: white; }
+
 .link1 {
+  background: url(../../psd/ironman1.jpg);
+  background-size: cover;
   height: 100%;
   width: 33.33%;
   background-color: hotpink;
@@ -233,6 +305,7 @@ footer.spider {
   width: 175%; }
 
 .link2 {
+  background: url(../../psd/captainmarvel1.jpg);
   height: 100%;
   width: 33.33%;
   background-color: yellow; }
@@ -241,6 +314,7 @@ footer.spider {
   width: 175%; }
 
 .link3 {
+  background: url(../../psd/spider-man1.jpg);
   height: 100%;
   width: 33.33%;
   background-color: blue;
@@ -248,6 +322,11 @@ footer.spider {
 
 .link3:hover {
   width: 175%; }
+
+span {
+  align-content: center;
+  height: 100%;
+  width: 100%; }
 
 .menu {
   height: 100vh;
@@ -263,6 +342,7 @@ footer.spider {
   display: flex; }
 
 .menu-button {
+  color: white;
   position: fixed;
   cursor: pointer;
   display: inline; }
@@ -285,3 +365,230 @@ footer.spider {
 
 .fade-layer.visible {
   display: block; }
+
+.namn1 {
+  display: none; }
+
+.namn2 {
+  display: none; }
+
+.namn3 {
+  display: none; }
+
+h4 {
+  display: none; }
+
+.main1 {
+  display: none; }
+
+.main2 {
+  display: none; }
+
+.mainiron-text {
+  display: none; }
+
+main.fr2 {
+  display: none; }
+
+@media only screen and (min-width: 1000px) {
+  .wrapper-index {
+    display: grid;
+    grid-template-rows: 50% 40% 10%;
+    grid-template-areas: "one" "two" "three"; }
+
+  main.index {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-area: one;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas: "main1 mainpic main2";
+    background-color: #ccbdea; }
+
+  .main1 {
+    grid-area: main1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(166, 155, 189, 0.5);
+    text-align: center;
+    display: block; }
+
+  .mainpic {
+    grid-area: mainpic;
+    width: 100%;
+    height: 100%;
+    background-color: #ccbdea;
+    text-align: center;
+    display: block; }
+
+  .main2 {
+    grid-area: main2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(166, 155, 189, 0.5);
+    display: block; }
+
+  footer.index {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-area: two;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "namn1 namn2 namn3";
+    background-color: #ccbdea; }
+
+  .namn1 {
+    background-image: url(../../psd/ironman2_desc.jpg);
+    display: block;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    grid-area: namn1;
+    background-color: darkblue; }
+
+  .namn2 {
+    background-image: url(../../psd/spider-man3_desc.jpg);
+    display: block;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    grid-area: namn2;
+    background-color: grey; }
+
+  .namn3 {
+    background-image: url(../../psd/captainmarvel_desc.jpg);
+    display: block;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    grid-area: namn3;
+    background-color: black; }
+
+  h4 {
+    display: block; }
+
+  .footer-title {
+    display: none; }
+
+  .footer-main {
+    display: none; }
+
+  .end-index {
+    background-color: #a69bbd;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-area: three;
+    text-align: center; }
+
+  .wrapper-spider {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas: "fr1 fr2 fr3";
+    grid-template-rows: 100%; }
+
+  main.fr1 {
+    grid-area: fr1;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../psd/spider-man4_desc.jpg);
+    background-size: cover; }
+
+  main.fr2 {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    grid-area: fr2;
+    display: block; }
+
+  main.fr3 {
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    grid-area: fr3;
+    background-image: url(../../psd/spider-man5_desc.jpg);
+    background-size: cover; }
+
+  .topspider {
+    display: none; }
+
+  .middelspider {
+    display: none; }
+
+  footer.spider {
+    display: none; }
+
+  .wrapper-iron {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "main" "footer"; }
+
+  main.iron {
+    grid-area: main;
+    display: grid-none;
+    background-image: url(../../psd/ironman3_desc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  .mainiron-text {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block; }
+
+  footer.iron {
+    grid-area: footer;
+    grid-template-rows: 100%;
+    background-image: url(../../psd/ironman4_desc.jpg); }
+
+  .footerpic {
+    display: none; }
+
+  .footertext {
+    display: none; }
+
+  .mainhead {
+    font-size: 1.25rem;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    grid-area: mainhead; }
+
+  .personbild {
+    display: none; }
+
+  .link1 {
+    background-image: url(../../psd/ironman1_desc.jpg); }
+
+  .link2 {
+    background-image: url(../../psd/captainmarvel2_desc.jpg);
+    background-size: cover; }
+
+  .link3 {
+    background-image: url(../../psd/spider-man_desc.jpg);
+    background-size: cover; }
+
+  i {
+    color: white; }
+
+  .mainbody {
+    background-image: url(../../psd/captainmarvel,2_desc.jpg); }
+
+  .cap-pic1 {
+    background-image: url(../../psd/captainmarvel5_desc.jpg);
+    background-size: contain; }
+
+  .cap-pic2 {
+    background-image: url(../../psd/captainmarvel4_desc.jpg); }
+
+  .spiderend {
+    display: none; }
+
+  footer.captain {
+    font-size: 2rem; } }
