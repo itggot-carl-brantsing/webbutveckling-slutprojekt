@@ -5,13 +5,13 @@ body
 .wrapper-index 
     min-height: 100vh 
     width: 100vw
-    background-image: url("../../psd/index-bakgrund.jpg")
+    background-image: url("../img/index-bakgrund.jpg")
     background-size: cover 
     display: grid 
     grid-template-rows: 40% 60%
     grid-template-areas: "main" "footer"
 .personbild 
-    background-image: url("../../psd/personbild.jpg")
+    background-image: url("../img/personbild.jpg")
     background-position: center
     background-size: cover
     border-radius: 50%
@@ -41,8 +41,8 @@ footer.index
     
 
 .footer-title
+    grid-area: footer-title
     width: 80%
-    height: 100%
     background-color: rgba(93, 93, 109, 0.7)
     margin: auto
 
@@ -63,7 +63,7 @@ footer.index
     grid-template-areas: "main-iron" "footer-iron"
 
 main.iron 
-    background-image: url(../../psd/marveltony.jpg)
+    background-image: url(../img/marveltony.jpg)
     background-size: cover
     width: 100%
     height: 100%
@@ -86,7 +86,7 @@ footer.iron
     height: 100%
     background-color: hotpink
     grid-area: pic 
-    background-image: url(../../psd/ironman2.jpg)
+    background-image: url(../img/ironman2.jpg)
     background-size: cover
 
 
@@ -118,18 +118,16 @@ main.captain
     display: grid
     grid-template-rows: 20% 80%
     grid-template-areas: "mainhead" "mainbody"
+
+
 .mainhead
     grid-area: mainhead
-    width: 100%
-    height: 100%
     background-color: black
 
 .mainbody
-    background-image: url(../../psd/captainmarvel2.jpg)
+    background-image: url(../img/captainmarvel2.jpg)
     background-size: cover
     grid-area: mainbody
-    width: 100%
-    height: 100%
     background-color: blue
     
 
@@ -141,20 +139,15 @@ main.captain
     grid-template-columns: 50% 50%
     grid-template-areas: "pic1 pic2"
     margin-bottom: 10px
+    *
+        background-size: cover
+        background-color: orange
 .cap-pic1
-    width: 100%
-    height: 100%
-    background-color: pink
     grid-area: pic1
-    background-image: url(../../psd/captainmarvel3.jpg)
-    background-size: cover
+    background-image: url(../img/captainmarvel3.jpg)
 .cap-pic2
-    width: 100%
-    height: 100%
-    background-color: orange
     grid-area: pic2
-    background-image: url(../../psd/captainmarvel4.jpg)
-    background-size: cover
+    background-image: url(../img/captainmarvel4.jpg)
 footer.captain
     grid-area: footer-cap
     padding-top: 10px
@@ -196,7 +189,7 @@ main.spider
     grid-template-areas: "topspider" "middelspider"
 
 .topspider
-    // background-image: url(../../psd/spider-manSwinging.jpg)
+    // background-image: url(../img/spider-manSwinging.jpg)
     height: 100%
     width: 100%
     grid-area: topspider
@@ -205,7 +198,7 @@ main.spider
     text-align: center
     font-size: 2rem
 .middelspider
-    background-image: url(../../psd/spider-man2.jpg)
+    background-image: url(../img/spider-man2.jpg)
     background-size: cover
     height: 100%
     width: 100%
@@ -251,14 +244,14 @@ footer.spider
 
 
 .picspider1 
-    background-image: url(../../psd/spiderTony.jpg)
+    background-image: url(../img/spiderTony.jpg)
     height: 100% 
     width: 50% 
     background-color: wheat
     margin: auto    
 
 .picspider2 
-    background-image: url(../../psd/spider-man3.jpg)
+    background-image: url(../img/spider-man3.jpg)
     height: 100%
     width: 50% 
     background-color: orange 
@@ -290,7 +283,7 @@ h1
     color: white
 
 .link1
-    background: url(../../psd/ironman1.jpg) 
+    background: url(../img/ironman1.jpg) 
     background-size: cover
     height: 100% 
     width: 33.33%
@@ -302,7 +295,7 @@ h1
     width: 175%
 
 .link2
-    background: url(../../psd/captainmarvel1.jpg) 
+    background: url(../img/captainmarvel1.jpg) 
     height: 100% 
     width: 33.33%
     background-color: yellow 
@@ -310,7 +303,7 @@ h1
     width: 175%
     
 .link3 
-    background: url(../../psd/spider-man1.jpg) 
+    background: url(../img/spider-man1.jpg) 
     height: 100% 
     width: 33.33%
     background-color: blue
@@ -427,7 +420,7 @@ main.fr2
         background-color: rgb(204,189,234)
 
     .namn1
-        background-image: url(../../psd/ironman2_desc.jpg)
+        background-image: url(../img/ironman2_desc.jpg)
         display: block
         margin: auto
         height: 80% 
@@ -435,7 +428,7 @@ main.fr2
         grid-area: namn1
         background-color: darkblue
     .namn2
-        background-image: url(../../psd/spider-man3_desc.jpg)
+        background-image: url(../img/spider-man3_desc.jpg)
         display: block
         margin: auto
         height: 80% 
@@ -443,7 +436,7 @@ main.fr2
         grid-area: namn2
         background-color: grey 
     .namn3
-        background-image: url(../../psd/captainmarvel_desc.jpg)
+        background-image: url(../img/captainmarvel_desc.jpg)
         display: block   
         margin: auto
         height: 80% 
@@ -475,7 +468,7 @@ main.fr2
         grid-area: fr1 
         height: 100%
         width: 100%
-        background-image: url(../../psd/spider-man4_desc.jpg)
+        background-image: url(../img/spider-man4_desc.jpg)
         background-size: cover
     main.fr2
         background-color: grey
@@ -488,7 +481,7 @@ main.fr2
         height: 100%
         width: 100%
         grid-area: fr3 
-        background-image: url(../../psd/spider-man5_desc.jpg)
+        background-image: url(../img/spider-man5_desc.jpg)
         background-size: cover
 
     .topspider 
@@ -507,7 +500,7 @@ main.fr2
     main.iron 
         grid-area: main 
         display: grid-none
-        background-image: url(../../psd/ironman3_desc.jpg)
+        background-image: url(../img/ironman3_desc.jpg)
         background-size: cover
         background-repeat: no-repeat
         
@@ -520,7 +513,8 @@ main.fr2
     footer.iron 
         grid-area: footer 
         grid-template-rows: 100%
-        background-image: url(../../psd/ironman4_desc.jpg)
+        background-image: url(../img/ironman4_desc.jpg)
+        background-size: cover
 
         
     .footerpic 
@@ -538,23 +532,23 @@ main.fr2
     .personbild 
         display: none
     .link1 
-        background-image: url(../../psd/ironman1_desc.jpg)
+        background-image: url(../img/ironman1_desc.jpg)
     .link2
-        background-image: url(../../psd/captainmarvel2_desc.jpg)
+        background-image: url(../img/captainmarvel2_desc.jpg)
         background-size: cover
     .link3
-        background-image: url(../../psd/spider-man_desc.jpg)
+        background-image: url(../img/spider-man_desc.jpg)
         background-size: cover
     i 
         color: white
 
     .mainbody
-        background-image: url(../../psd/captainmarvel,2_desc.jpg)
+        background-image: url(../img/captainmarvel,2_desc.jpg)
     .cap-pic1 
-        background-image: url(../../psd/captainmarvel5_desc.jpg)
-        background-size: contain
+        background-image: url(../img/captainmarvel5_desc.jpg)
+        background-size: cover
     .cap-pic2
-        background-image: url(../../psd/captainmarvel4_desc.jpg)
+        background-image: url(../img/captainmarvel4_desc.jpg)
     .spiderend 
         display: none
         
