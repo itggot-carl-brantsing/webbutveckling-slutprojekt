@@ -140,11 +140,11 @@ main.captain {
     background-size: cover;
     background-color: orange; }
 
-.cap-pic1 {
+.middelsegment div:nth-of-type(1) {
   grid-area: pic1;
   background-image: url(../img/captainmarvel3.jpg); }
 
-.cap-pic2 {
+.middelsegment div:nth-of-type(2) {
   grid-area: pic2;
   background-image: url(../img/captainmarvel4.jpg); }
 
@@ -250,14 +250,16 @@ footer.spider {
   height: 100%;
   width: 50%;
   background-color: wheat;
-  margin: auto; }
+  margin: auto;
+  background-size: cover; }
 
 .picspider2 {
   background-image: url(../img/spider-man3.jpg);
   height: 100%;
   width: 50%;
   background-color: orange;
-  margin: auto; }
+  margin: auto;
+  background-size: cover; }
 
 .spiderend {
   grid-area: end-spider;
@@ -284,35 +286,36 @@ h1 {
   text-align: center;
   color: white; }
 
-.link1 {
+.link {
+  height: 100%;
+  width: 100%; }
+
+.link:nth-of-type(1) {
   background: url(../img/ironman1.jpg);
-  background-size: cover;
-  height: 100%;
   width: 33.33%;
-  background-color: hotpink;
-  grid-area: link1; }
+  background-size: cover; }
 
-.link1:hover {
-  width: 175%; }
+.link:nth-of-type(1):hover {
+  width: 175%;
+  transition: 0.4s; }
 
-.link2 {
+.link:nth-of-type(2) {
+  width: 33.33%;
   background: url(../img/captainmarvel1.jpg);
-  height: 100%;
+  background-size: cover; }
+
+.link:nth-of-type(2):hover {
+  width: 175%;
+  transition: 0.4s; }
+
+.link:nth-of-type(3) {
   width: 33.33%;
-  background-color: yellow; }
-
-.link2:hover {
-  width: 175%; }
-
-.link3 {
   background: url(../img/spider-man1.jpg);
-  height: 100%;
-  width: 33.33%;
-  background-color: blue;
-  grid-area: link3; }
+  background-size: cover; }
 
-.link3:hover {
-  width: 175%; }
+.link:nth-of-type(3):hover {
+  width: 175%;
+  transition: 0.4s; }
 
 span {
   align-content: center;
@@ -357,14 +360,8 @@ span {
 .fade-layer.visible {
   display: block; }
 
-.namn1 {
-  display: none; }
-
-.namn2 {
-  display: none; }
-
-.namn3 {
-  display: none; }
+footer .index:nth-of-child(1), footer .index:nth-of-child(2), footer .index:nth-of-child(3) {
+  display: block; }
 
 h4 {
   display: none; }
@@ -393,7 +390,7 @@ main.fr2 {
     display: grid;
     grid-area: one;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-areas: "main1 mainpic main2";
+    grid-template-areas: "main1 mainmiddel main2";
     background-color: #ccbdea; }
 
   .main1 {
@@ -404,8 +401,8 @@ main.fr2 {
     text-align: center;
     display: block; }
 
-  .mainpic {
-    grid-area: mainpic;
+  .mainmiddel {
+    grid-area: mainmiddel;
     width: 100%;
     height: 100%;
     background-color: #ccbdea;
@@ -429,32 +426,27 @@ main.fr2 {
     grid-template-areas: "namn1 namn2 namn3";
     background-color: #ccbdea; }
 
-  .namn1 {
-    background-image: url(../img/ironman2_desc.jpg);
+  footer div {
     display: block;
     margin: auto;
     height: 80%;
-    width: 80%;
+    width: 80%; }
+
+  footer.index div:nth-child(1) {
+    background-image: url(../img/ironman2_desc.jpg);
     grid-area: namn1;
     background-color: darkblue; }
 
-  .namn2 {
+  footer.index div:nth-child(2) {
     background-image: url(../img/spider-man3_desc.jpg);
-    display: block;
-    margin: auto;
-    height: 80%;
-    width: 80%;
     grid-area: namn2;
     background-color: grey; }
 
-  .namn3 {
+  footer.index div:nth-child(3) {
     background-image: url(../img/captainmarvel_desc.jpg);
-    display: block;
-    margin: auto;
-    height: 80%;
-    width: 80%;
     grid-area: namn3;
-    background-color: black; }
+    background-color: black;
+    background-size: cover; }
 
   h4 {
     display: block; }
@@ -555,14 +547,14 @@ main.fr2 {
   .personbild {
     display: none; }
 
-  .link1 {
+  .link:nth-of-type(1) {
     background-image: url(../img/ironman1_desc.jpg); }
 
-  .link2 {
+  .link:nth-of-type(2) {
     background-image: url(../img/captainmarvel2_desc.jpg);
     background-size: cover; }
 
-  .link3 {
+  .link:nth-of-type(3) {
     background-image: url(../img/spider-man_desc.jpg);
     background-size: cover; }
 
@@ -572,12 +564,13 @@ main.fr2 {
   .mainbody {
     background-image: url(../img/captainmarvel,2_desc.jpg); }
 
-  .cap-pic1 {
+  .middelsegment div:nth-of-type(1) {
     background-image: url(../img/captainmarvel5_desc.jpg);
     background-size: cover; }
 
-  .cap-pic2 {
-    background-image: url(../img/captainmarvel4_desc.jpg); }
+  .middelsegment div:nth-of-type(2) {
+    background-image: url(../img/captainmarvel4_desc.jpg);
+    background-size: cover; }
 
   .spiderend {
     display: none; }

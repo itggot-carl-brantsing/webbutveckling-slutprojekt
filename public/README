@@ -13,21 +13,21 @@
 <body>
     
     <div class="menu">
-        <div class="link1 smalltransition"> 
+        <nav class="link smalltransition"> 
             <a id="button1" href="iron.html">
                 <i class="material-icons">filter_1</i> 
              </a>
-        </div>
-        <div class="link2 smalltransition">
+        </nav>
+        <nav class="link smalltransition">
         <a id="button2" href="captain.html">
                 <i class="material-icons">filter_2</i>
             </a>
-        </div>
-        <div class="link3 smalltransition">
+        </nav>
+        <nav class="link smalltransition">
                 <a id="button2" href="spider.html">
                         <i class="material-icons">filter_3</i>
                     </a>
-        </div>
+        </nav>
     </div>
 
     <div class="fade-layer" onclick="showMenu()"></div>
